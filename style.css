@@ -1,0 +1,84 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.page-wrapper {
+    padding: 2rem 4rem;
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.title h1 {
+    margin: 0;
+    font-weight: 900;
+}
+
+.title h2 {
+    margin: 0;
+    font-weight: 700;
+}
+
+#pokedex {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    align-content: center;
+    grid-row-gap: 1rem;
+}
+
+.pokemon {
+    padding: 1rem;
+    width: 200px;
+    align-items: center;
+    justify-self: center;
+    box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+    text-decoration: none !important;
+    color: #000 !important;
+}
+
+.pokemon:hover {
+    cursor: pointer;
+}
+
+.pokemon .card-title {
+    font-size: 1.2rem;
+    margin: 0;
+    text-transform: capitalize;
+}
+
+.pokemon .card-img-top:hover {
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+  
+@keyframes shake {
+    10%, 90% {
+        transform: translate3d(-1px, 0, 0);
+    }
+
+    20%, 80% {
+        transform: translate3d(2px, 0, 0);
+    }
+
+    30%, 50%, 70% {
+        transform: translate3d(-4px, 0, 0);
+    }
+
+    40%, 60% {
+        transform: translate3d(4px, 0, 0);
+    }
+}
+
+.modal-title {
+    text-transform: capitalize;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+#pokemon-videos {
+    text-align: center;
+}
